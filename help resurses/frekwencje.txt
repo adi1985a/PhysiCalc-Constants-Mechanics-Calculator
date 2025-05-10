@@ -1,0 +1,106 @@
+Frequency of Selected Sounds
+f (THz)	device, event, phenomena, process
+0.1–2	SASER (sound laser)
+ 	 
+f (MHz)	device, event, phenomena, process
+1–20	medical ultrasound
+ 	 
+f (kHz)	device, event, phenomena, process
+25–80	bat sonar clicks
+40–50	ultrasonic cleaning
+32.768	quartz timing crystal
+18–20	upper limit of human hearing
+4–5	field cricket (Teleogryllus oceanicus)
+2–5	maximum sensitivity of the human hear
+ 	 
+f (Hz)	device, event, phenomena, process
+300–3000	voice frequency (VF), important for understanding speech
+2048	C7 scientific scale, highest note of a soprano singer (approximate)
+440	A4 american standard pitch, tv test pattern tone
+435	A4 international pitch
+426.67	A4 scientific scale
+261.63	C4 american standard pitch
+258.65	C4 international pitch
+256	C4 scientific scale, typical fundamental frequency for female vocal cords
+128	C3 scientific scale, typical fundamental frequency for male vocal cords
+64	C2 scientific scale, lowest note of a bass singer (approximate)
+90	ruby-throated hummingbird in flight
+60	alternating current hum (US and Japan)
+50	alternating current hum (Europe)
+8–20	lower limit of human hearing
+17–30	blue and fin wales are the loudest marine sound in this range
+1–5	tornadoes 
+
+Frequency Hearing Ranges for Selected Animals (60 dB)
+fish	–	actinopterygii	frequency range (Hz)
+american shad	–	Alosa sapidissima	200	–	180,000
+goldfish	–	Carassius auratus	5	–	2,000
+atlantic cod	–	Gadus morhua	2	–	500
+tuna	–	Thunnus …	50	–	1,100
+catfish	–	… …	50	–	4,000
+ 
+amphibians	–	amphibia	frequency range (Hz)
+tree frog	–	… …	50	–	4,000
+bullfrog	–	Lithobates catesbeianus	100	–	2,500
+cave salamander	–	Proteus anguinus	10	–	10,000
+ 
+reptiles	–	reptilia, sauropsida	frequency range (Hz)
+red-eared slider	–	Trachemys scripta elegans	68	–	840
+spectacled caiman	–	Caiman crocodilus	20	–	6,000
+ 
+birds	–	aves	frequency range (Hz)
+mallard duck	–	Anus platyrhynchus	300	–	8,000
+pigeon	–	Columba livia	?	–	5,800
+chicken	–	Gallus gallus	125	–	2,000
+canary	–	Serinus canaria	250	–	8,000
+cockatiel	–	Nymphicus hollandicus	250	–	8,000
+parakeet	–	Melopsittacus undulatus	200	–	8,500
+penguin	–	Spheniscus demersus	100	–	15,000
+owl		–	… …	200	–	12,000
+ 
+mammals	–	mammalia	frequency range (Hz)
+cattle	–	Bos taurus	23	–	35,000
+sheep		–	Ovis aries	100	–	30,000
+pig		–	Sus scrofa domestica	45	–	45,000
+dog			–	Canis lupus familiaris	67	–	45,000
+cat			–	Felis silvestris catus	45	–	64,000
+ferret		–	Mustela putorius furo	16	–	44,000
+raccoon		–	Procyon lotor	100	–	40,000
+blue whale		–	Balaenoptera musculus	5	–	12,000
+humpback whale	–	Megaptera novaeangliae	30	–	28,000
+risso's dolphin	–	Grampus griseus	8,000	–	100,000
+beluga whale	–	Delphinapterus leucas	1,000	–	123,000
+atlantic bottlenose dolphin	–	Tursiops truncatus	75	–	150,000
+greater horseshoe bat	–	Rhinolophus ferrumequinum	2,000	–	110,000
+jamaican fruit bat	–	Artibeus jamaicensis	2,800	–	131,000
+northern quoll	–	Dasyurus hallucatus	500	–	40,000
+opossum	–	… …	500	–	64,000
+hedgehog	–	… …	250	–	45,000
+rabbit	–	… …	360	–	42,000
+horse	–	Equus caballus	55	–	33,500
+japanese macaque	–	Macaca fuscata	28	–	34,500
+old world monkeys	–	… …	60	–	40,000
+human	–	Homo sapiens	31	–	17,600
+asian elephant	–	Elephas maximus	16	–	12,000
+guinea pig	–	Cavia porcellus	54	–	50,000
+chinchilla	–	Chinchilla lanigera	90	–	22,800
+hamster	–	Mesocricetus auratus	80	–	45,000
+rat	–	Rattus …	500	–	64,000
+mouse	–	Mus …	2,300	–	85,500
+gerbil	–	Meriones unguiculatus	100	–	60,000
+manatee	–	Trichechus manatus latirostris	400	–	46,000
+ 
+insects	-	insecta	frequency range (Hz)
+noctuid moth	–	… …	1,000	–	240,000
+grasshopper	–	… …	100	–	50,000
+
+
+Typical Parameters of Medical Ultrasound
+ 	
+frequency     (MHz)	power(W)intensity(W/cm2)	pulse
+duration
+ 
+imaging, echo	1	       –	20	        0.05	1.75	0.2	–	1 µs
+imaging, doppler	       1	–	          20	0.15	15.7	0.3	–	10 µs
+physiotherapy	0.5	       –	3	         < 3	2.5	continuous
+surgery	0.5	–	       10	~ 200	       1,500	1	–	16 s

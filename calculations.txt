@@ -1,0 +1,2 @@
+Calculation: Velocity | Result: 4
+Calculation: Final Velocity with Air Resistance | Result: -10.3132

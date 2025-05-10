@@ -1,0 +1,49 @@
+
+Speed of Sound in Various Materials
+solids	        v (m/s)	 	liquids	v (m/s)
+aluminum	6420	 	
+alcohol, ethyl	1207
+beryllium	12,890	 	
+alcohol, methyl	1103
+brass	        4700	 	
+mercury	        1450
+brick	        3650	 	
+water, distilled1497
+copper	        4760	 	
+water, sea	1531
+cork	         500	 	 	 
+glass, crown	5100	 	 	 
+glass, flint	3980	 	
+
+gases (STP)	v (m/s)
+glass, pyrex	5640	 	
+air, 000 ?	331
+gold	        3240	 	
+air, 020 ?	343
+granite	        5950	 	
+argon	         319
+iron	        5950	 	
+carbon dioxide	 259
+lead	        2160	 	
+helium	         965
+lucite	        2680	 	
+hydrogen (H2)	1284
+marble	        3810	 	
+neon	         435
+rubber, butyl	1830	 	
+nitrogen	 334
+rubber, vulcan.   54	 	
+nitrous oxide	 263
+silver	3650	 	
+oxygen (O2)	 316
+steel, mild	5960	 	
+water vapor134?	 494
+steel, stainless5790	 	 	 
+titanium	6070	 	
+
+biological materials	v (m/s)
+wood, ash	4670	 	
+soft tissues	1540
+wood, elm	4120	 	 	 
+wood, maple	4110	 	 	 
+wood, oak	3850	 	 	

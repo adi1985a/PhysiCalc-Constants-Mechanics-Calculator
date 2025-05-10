@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1678143724 source:c:\users\hp\desktop\programy na github\c++\programs\program kosmos\program kosmos\main.cpp
+	<iostream>
+	<iomanip>
+	<cmath>
+
+1678147324 source:c:\users\hp\desktop\portfolio programy na github\c++\programs\huge physical values and calculations\main.cpp
+	<iostream>
+	<iomanip>
+	<cmath>
+
