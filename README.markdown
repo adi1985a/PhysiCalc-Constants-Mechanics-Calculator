@@ -1,105 +1,170 @@
-# Physical Values Calculator
+# 🔬🌌 PhysiCalc Pro: Universal Constants & Mechanics Calculator ⚙️
+_A C++ console application for performing essential physics calculations and exploring mathematical constants, featuring cross-platform colored output, logging, and results persistence._
 
-## Overview
-This C++ console application, created by Adrian Lesniak, provides a menu-driven interface for physics calculations: velocity, force, kinetic/potential energy, final velocity with air resistance, and date-based calculations using constants (π, golden ratio, Fibonacci, speed of light). It supports cross-platform colored output, logs errors to `physics_calc.log`, and saves results to `calculations.txt`.
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![C++](https://img.shields.io/badge/Language-C%2B%2B%2011%2B-blue.svg)](https://isocpp.org/)
+[![Platform: Windows | Linux | macOS](https://img.shields.io/badge/Platform-Windows%20%7C%20Linux%20%7C%20macOS-lightgrey.svg)]()
 
-## Features
-- **Calculation Functions**:
-  - `velocity`: Computes speed (v = d/t).
-  - `force`: Calculates force (F = ma).
-  - `kineticEnergy`: Computes kinetic energy (Ek = ½mv²).
-  - `potentialEnergy`: Calculates potential energy (Ep = mgh, g = 9.81 m/s²).
-  - `finalVelocityWithAirResistance`: Computes velocity considering air drag.
-  - `calculation_date`: Multiplies a date by constants (π, golden ratio, Fibonacci, E=mc²).
-- **Interface**:
-  - `displayHeader`: Shows program title, author, and features.
-  - `displayMenu`: Lists options 1–6 and 0 to exit.
-  - Colored output (yellow, cyan, magenta) with Windows (`<windows.h>`) or ANSI codes.
-- **Logger Class**:
-  - Logs errors/messages with timestamps to `physics_calc.log`.
-- **File I/O**:
-  - `saveResult`: Saves calculation results to `calculations.txt`.
-- **Utilities**:
-  - `setColor`: Sets console text color (cross-platform).
-  - `waitForKeypress`: Pauses for user input to return to menu.
-- **Main Program**:
-  - Loops until user selects exit (0).
-  - Handles invalid inputs with exceptions and retries.
+## 📋 Table of Contents
+1.  [Overview](#-overview)
+2.  [Key Features & Calculations](#-key-features--calculations)
+3.  [Screenshots](#-screenshots)
+4.  [System Requirements](#-system-requirements)
+5.  [Installation and Setup](#️-installation-and-setup)
+6.  [Usage Guide](#️-usage-guide)
+7.  [File Structure & Data Persistence](#-file-structure--data-persistence)
+8.  [Technical Notes](#-technical-notes)
+9.  [Contributing](#-contributing)
+10. [License](#-license)
+11. [Contact](#-contact)
 
-## Requirements
-- C++ compiler (e.g., g++, clang++) with C++11 or later
-- Standard C++ libraries: `<iostream>`, `<iomanip>`, `<cmath>`, `<fstream>`, `<string>`, `<ctime>`, `<limits>`
-- Windows OS (optional, for `<windows.h>` console colors) or any OS with ANSI-compatible terminal
-- Write permissions for `physics_calc.log` and `calculations.txt`
+## 📄 Overview
 
-## Setup
-1. Clone the repository:
-   ```bash
-   git clone <repository-url>
-   cd <repository-directory>
-   ```
-2. Save the provided code as `physics_calculator.cpp`.
-3. Compile the program:
-   ```bash
-   g++ physics_calculator.cpp -o physics_calculator
-   ```
-4. Run the program:
-   ```bash
-   ./physics_calculator
-   ```
+**PhysiCalc Pro**, developed by Adrian Lesniak, is a versatile C++ console application designed to perform a range of fundamental physics calculations and engage with intriguing mathematical constants. Users can compute velocity, force, kinetic and potential energy, and even final velocity considering air resistance. A unique feature involves "date-based calculations" where a numerical representation of a date is multiplied by constants like π (Pi), φ (the golden ratio), a Fibonacci number, and a factor related to E=mc² (speed of light). The program boasts a user-friendly, menu-driven interface with **cross-platform colored output** (using Windows API or ANSI escape codes), robust error logging to `physics_calc.log`, and saves all successful calculation results to `calculations.txt`.
 
-## Usage
-1. Compile and run the program using the steps above.
-2. **Interface**:
-   - Displays header with program features and menu options:
-     1. Calculate Velocity
-     2. Calculate Force
-     3. Calculate Kinetic Energy
-     4. Calculate Potential Energy
-     5. Calculate Final Velocity with Air Resistance
-     6. Date Calculations
-     0. Exit
-3. **Input**:
-   - Select 0–6 to choose a tool.
-   - Enter required values (e.g., distance/time for velocity, date for calculations).
-   - Invalid inputs trigger error messages and retries.
-4. **Output**:
-   - Velocity: Speed in m/s (e.g., "Velocity: 5.0 m/s").
-   - Force: Force in N (e.g., "Force: 10.0 N").
-   - Kinetic Energy: Energy in J (e.g., "Kinetic Energy: 50.0 J").
-   - Potential Energy: Energy in J (e.g., "Potential Energy: 98.1 J").
-   - Final Velocity: Velocity in m/s (e.g., "Final Velocity: 4.2 m/s").
-   - Date Calculations: Date multiplied by constants (e.g., "Date * PI: 6283.0").
-   - Results saved to `calculations.txt`; errors logged to `physics_calc.log`.
-5. **Actions**:
-   - Press Enter to return to menu after each calculation.
-   - Select 0 to exit.
+![Demo GIF](screenshots/1.gif)
 
-## File Structure
-- `physics_calculator.cpp`: Main C++ source file with program logic.
-- `physics_calc.log`: Log file for errors/messages (created/appended).
-- `calculations.txt`: Output file for calculation results (created/appended).
-- `README.md`: This file, providing project documentation.
+## ✨ Key Features & Calculations
 
-## Notes
-- Cross-platform color support with `#ifdef _WIN32` for Windows and ANSI codes for other OS.
-- Includes commented code for future expansion (e.g., I Ching patterns, quantum physics).
-- Constants defined for physics (e.g., π, golden ratio, speed of light, Fibonacci).
-- Input validation handles non-numeric inputs via exceptions.
-- Extend by adding more physics calculations, GUI, or enhanced logging.
-- Ensure write permissions for `physics_calc.log` and `calculations.txt`.
-- No external dependencies beyond standard C++ libraries.
+*   ⚙️ **Core Physics Calculations**:
+    *   `velocity`: Computes speed (v = d/t) given distance and time.
+    *   `force`: Calculates force (F = ma) given mass and acceleration.
+    *   `kineticEnergy`: Computes kinetic energy (Ek = ½mv²) given mass and velocity.
+    *   `potentialEnergy`: Calculates gravitational potential energy (Ep = mgh, using g = 9.81 m/s²) given mass and height.
+    *   `finalVelocityWithAirResistance`: Estimates the final velocity of an object considering air drag (likely using a simplified model or specific formula inputs).
+*   📅 **Mathematical Constant Explorations**:
+    *   `calculation_date`: Takes a numerical representation of a date (e.g., YYYYMMDD) and multiplies it by:
+        *   π (Pi ≈ 3.14159)
+        *   φ (Golden Ratio ≈ 1.61803)
+        *   A specific Fibonacci number
+        *   A factor related to the speed of light (c, as in E=mc²)
+*   🖥️ **Interactive Console Interface**:
+    *   `displayHeader`: Shows a clear program title, author credit, and a summary of available features.
+    *   `displayMenu`: Provides a simple, numbered menu with options for each calculation and an exit option.
+    *   **Cross-Platform Colored Output**: Utilizes Windows-specific calls (`<windows.h>`) or standard ANSI escape codes to provide colored text (yellow, cyan, magenta, etc.) for enhanced UI on compatible terminals.
+*   ✍️ **Logging & File I/O**:
+    *   **Logger Class**: A dedicated class for logging errors and potentially informational messages with timestamps to `physics_calc.log`.
+    *   `saveResult`: Saves the details and results of each successful calculation to `calculations.txt` for persistence and review.
+*   🛠️ **Utility Functions**:
+    *   `setColor`: A cross-platform compatible function to set console text color.
+    *   `waitForKeyPress`: Pauses program execution, prompting the user to press a key before returning to the main menu.
+*   ⚙️ **Robust Operation**:
+    *   The main program loop continues until the user chooses to exit (option 0).
+    *   Handles invalid user inputs (e.g., non-numeric values when numbers are expected) gracefully using C++ exceptions and retry prompts.
 
-## Contributing
-Contributions are welcome! To contribute:
-1. Fork the repository.
-2. Create a new branch (`git checkout -b feature-branch`).
-3. Make changes and commit (`git commit -m "Add feature"`).
-4. Push to the branch (`git push origin feature-branch`).
-5. Open a pull request.
+## 🖼️ Screenshots
 
-## License
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+_Screenshots showcasing the main menu, input prompts for various physics calculations, example outputs, the date calculation feature, and snippets from `calculations.txt` and `physics_calc.log`._
 
-## Contact
-For questions or feedback, open an issue on GitHub or contact the repository owner.
+<p align="center">
+  <img src="screenshots\1.jpg" width="300"/>
+  <img src="screenshots\2.jpg" width="300"/>
+  <img src="screenshots\3.jpg" width="300"/>
+  <img src="screenshots\4.jpg" width="300"/>
+  <img src="screenshots\5.jpg" width="300"/>
+  <img src="screenshots\6.jpg" width="300"/>
+  <img src="screenshots\7.jpg" width="300"/>
+  <img src="screenshots\8.jpg" width="300"/>
+</p>
+
+
+## ⚙️ System Requirements
+
+*   **Operating System**: Windows (for optional, enhanced console colors via `<windows.h>`) or any OS with an ANSI-compatible terminal (Linux, macOS) for basic color support.
+*   **C++ Compiler**: A C++ compiler supporting C++11 or later (e.g., g++, clang++, MSVC).
+*   **Standard C++ Libraries**: `<iostream>`, `<iomanip>`, `<cmath>`, `<fstream>`, `<string>`, `<vector>`, `<ctime>`, `<limits>`, `<stdexcept>` (for exception handling).
+*   **Write Permissions**: The application needs write permissions in its execution directory to create/modify `physics_calc.log` and `calculations.txt`.
+
+## 🛠️ Installation and Setup
+
+1.  **Clone the Repository**:
+    ```bash
+    git clone <repository-url>
+    cd <repository-directory>
+    ```
+    (Replace `<repository-url>` and `<repository-directory>` with your specific details)
+
+2.  **Save Main Code**:
+    Ensure your main program logic (including the `Logger` class, calculation functions, UI functions, and `main()`) is saved as `physics_calculator.cpp` (or your chosen main file name) in the project directory. *(The description implies most logic, including helper classes like Logger, might be within a single `.cpp` file or managed through minimal internal headers not requiring separate user provision).*
+
+3.  **Compile the Program**:
+    Open a terminal (Command Prompt, PowerShell, Bash, etc.) in the project directory.
+    **Example using g++ (works on Windows with MinGW, Linux, macOS):**
+    ```bash
+    g++ physics_calculator.cpp -o physics_calculator -std=c++11
+    ```
+    *(Add `-static-libgcc -static-libstdc++` on Windows with MinGW if desired for standalone executables. Add optimization flags like `-O2` for release builds if needed).*
+
+4.  **Run the Program**:
+    *   On Windows: `.\physics_calculator.exe` or `physics_calculator.exe`
+    *   On Linux/macOS: `./physics_calculator` (ensure execute permissions: `chmod +x physics_calculator`)
+
+## 💡 Usage Guide
+
+1.  Compile and run `physics_calculator` as detailed above.
+2.  **Interface**:
+    *   The program will display a header with its features and then the main menu:
+        1.  Calculate Velocity
+        2.  Calculate Force
+        3.  Calculate Kinetic Energy
+        4.  Calculate Potential Energy
+        5.  Calculate Final Velocity with Air Resistance
+        6.  Date Calculations with Constants
+        0.  Exit
+3.  **Input**:
+    *   Select a menu option (0–6) by typing the number and pressing Enter.
+    *   **For Physics Calculations (Options 1–5)**: You will be prompted to enter the required numerical values (e.g., distance and time for velocity; mass and acceleration for force; mass, height for potential energy; details for air resistance; etc.).
+    *   **For Date Calculations (Option 6)**: You will be prompted to enter a date (likely as a single number, e.g., YYYYMMDD or just a numerical value to be used in calculations).
+    *   Invalid inputs (e.g., non-numeric characters when numbers are expected, or values that don't make sense for the calculation) will trigger an error message, log the error, and prompt for re-entry.
+4.  **Output**:
+    *   **Velocity**: Displays speed in m/s (e.g., "Velocity: 5.00 m/s").
+    *   **Force**: Shows force in Newtons (N) (e.g., "Force: 10.00 N").
+    *   **Kinetic Energy**: Outputs energy in Joules (J) (e.g., "Kinetic Energy: 50.00 J").
+    *   **Potential Energy**: Displays energy in Joules (J) (e.g., "Potential Energy: 98.10 J").
+    *   **Final Velocity (with Air Resistance)**: Shows the calculated velocity in m/s.
+    *   **Date Calculations**: Displays the results of multiplying the input date value by π, golden ratio, Fibonacci number, and speed of light factor (e.g., "Date * PI: 6283.18").
+    *   All successful calculation results are saved to `calculations.txt`.
+    *   Errors are logged to `physics_calc.log`.
+5.  **Actions**:
+    *   After each calculation and display of results, you will be prompted to press Enter to return to the main menu.
+    *   Select option `0` from the main menu to exit the application.
+
+## 🗂️ File Structure & Data Persistence
+
+*   `physics_calculator.cpp`: The main C++ source file containing all program logic, including calculation functions, UI management, the `Logger` class (or its instance), and file handling.
+*   `physics_calc.log`: A plain text file where error messages and potentially other informational logs are recorded with timestamps. Created or appended to.
+*   `calculations.txt`: A plain text file that stores a record of all successful calculations, including the input parameters and the computed result, along with a timestamp. Created or appended to.
+*   `README.md`: This documentation file.
+
+## 📝 Technical Notes
+
+*   **Cross-Platform Color**: Implements conditional compilation (`#ifdef _WIN32`) to use Windows-specific console API (`SetConsoleTextAttribute`) for colors on Windows, and standard ANSI escape codes for color support on other ANSI-compatible terminals (Linux, macOS).
+*   **Constants**: Defines and uses physical and mathematical constants like g (acceleration due to gravity), π (Pi), φ (golden ratio), a Fibonacci number, and c (speed of light).
+*   **Input Validation**: Employs C++ exception handling (`try-catch` blocks for `std::invalid_argument`, `std::out_of_range`) and stream state checks (`std::cin.fail()`) to manage non-numeric or inappropriate inputs.
+*   **Timestamping**: Uses C++ `<ctime>` library to generate and format timestamps for log entries and saved calculation results.
+*   **Commented Code for Expansion**: The description notes commented-out code for potential future features (e.g., I Ching patterns, quantum physics), indicating areas for further development.
+
+## 🤝 Contributing
+
+Contributions to **PhysiCalc Pro** are highly encouraged! If you have ideas for adding more physics calculations, refining existing formulas, improving the cross-platform support, enhancing the user interface, or implementing graphical output:
+
+1.  Fork the repository.
+2.  Create a new branch for your feature (`git checkout -b feature/YourPhysicsIdea`).
+3.  Make your changes and commit them (`git commit -m 'Feature: Implement YourPhysicsIdea'`).
+4.  Push to the branch (`git push origin feature/YourPhysicsIdea`).
+5.  Open a Pull Request.
+
+Please ensure your code is well-commented and adheres to good C++ practices.
+
+## 📃 License
+
+This project is licensed under the **MIT License**.
+(If you have a `LICENSE` file in your repository, refer to it: `See the LICENSE file for details.`)
+
+## 📧 Contact
+
+Created by **Adrian Lesniak**.
+For questions, feedback, or issues, please open an issue on the GitHub repository or contact the repository owner.
+
+---
+🌌 _Exploring the laws of nature and the elegance of mathematics, one calculation at a time._
