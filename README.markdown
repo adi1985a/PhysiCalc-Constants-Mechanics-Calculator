@@ -22,6 +22,8 @@ _A C++ console application for performing essential physics calculations and exp
 
 **PhysiCalc Pro**, developed by Adrian Lesniak, is a versatile C++ console application designed to perform a range of fundamental physics calculations and engage with intriguing mathematical constants. Users can compute velocity, force, kinetic and potential energy, and even final velocity considering air resistance. A unique feature involves "date-based calculations" where a numerical representation of a date is multiplied by constants like π (Pi), φ (the golden ratio), a Fibonacci number, and a factor related to E=mc² (speed of light). The program boasts a user-friendly, menu-driven interface with **cross-platform colored output** (using Windows API or ANSI escape codes), robust error logging to `physics_calc.log`, and saves all successful calculation results to `calculations.txt`.
 
+![Demo GIF](screenshots/1.gif)
+
 ## ✨ Key Features & Calculations
 
 *   ⚙️ **Core Physics Calculations**:
@@ -52,9 +54,19 @@ _A C++ console application for performing essential physics calculations and exp
 
 ## 🖼️ Screenshots
 
-**Coming soon!**
+_Screenshots showcasing the main menu, input prompts for various physics calculations, example outputs, the date calculation feature, and snippets from `calculations.txt` and `physics_calc.log`._
 
-_This section will be updated with screenshots showcasing the main menu, input prompts for various physics calculations, example outputs, the date calculation feature, and snippets from `calculations.txt` and `physics_calc.log`._
+<p align="center">
+  <img src="screenshots\1.jpg" width="300"/>
+  <img src="screenshots\2.jpg" width="300"/>
+  <img src="screenshots\3.jpg" width="300"/>
+  <img src="screenshots\4.jpg" width="300"/>
+  <img src="screenshots\5.jpg" width="300"/>
+  <img src="screenshots\6.jpg" width="300"/>
+  <img src="screenshots\7.jpg" width="300"/>
+  <img src="screenshots\8.jpg" width="300"/>
+</p>
+
 
 ## ⚙️ System Requirements
 
